@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.input_video {
+  display: none;
+}
+
+#three-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.message {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #000;
+}

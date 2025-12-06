@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Floor is Lava</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+
+  <!-- MediaPipe Holistic -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/holistic/holistic.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <video class="input_video" autoplay playsinline></video>
+    <canvas id="three-canvas"></canvas>
+    <div class="message">Move left/right to avoid the lava!</div>
+  </div>
+
+  <script src="bodytracking.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
